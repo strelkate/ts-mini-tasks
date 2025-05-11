@@ -1,10 +1,10 @@
-type Post = {
+interface Post {
     id: string
     title: string
     body: string
 }
 
-type NormalizedPosts = {
+interface NormalizedPosts {
     byId: Record<string, Post>
     allIds: string[]
 }
